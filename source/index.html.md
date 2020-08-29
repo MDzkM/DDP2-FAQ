@@ -13,10 +13,7 @@ toc_footers:
 includes:
   - errors
   - recipes
-  - installjava
-  - installgit
-  - installvscode
-  - simpleprogram
+  - start
 
 search: true
 
