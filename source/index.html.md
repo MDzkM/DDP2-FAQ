@@ -1,12 +1,13 @@
 ---
-title: API Reference
+title: FAQ on Java Programming for DDP2
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
   - java
+  - python
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://scele.cs.ui.ac.id/course/view.php?id=3019'>DDP2 Course Page</a>
+  - <a href='https://github.com/MDzkM/DDP2-FAQ/issues'>Report Issues</a>
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
