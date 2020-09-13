@@ -500,16 +500,16 @@
 <blockquote>
 <p>Command to move the folder:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">mv </span>jdk-14.0.2 ~
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">mv </span>jdk-14.0.2 <span class="nv">$HOME</span>
 </code></pre></div>
 <ul>
-<li>There should be a new folder called &quot;jdk-&lt;version&gt;&quot;. Now, move that folder to your home directory (you can use ~ as an alias for home directory).</li>
+<li>There should be a new folder called &quot;jdk-&lt;version&gt;&quot;. Now, move that folder to your home directory (you can use $HOME or ~ as an alias for home directory).</li>
 </ul>
 
 <blockquote>
 <p>Navigate to home directory:
 ~~~shell
-cd ~
+cd $HOME
 ~~~</p>
 </blockquote>
 
@@ -546,8 +546,47 @@ cd ~
 
 <p><img src="images/java-linux-01-a92ad8cb.jpg" alt="" /></p>
 <h2 id='git'>Git</h2>
-<p>Content under development</p>
-<h2 id='visual-studio-code'>Visual Studio Code</h2>
+<p>Git is a version control system (VCS) designed to help you maintain file versions for projects small and large. In this course, you will get and submit assignment through this application. First of all, we should know the difference between &quot;Git&quot; and &quot;GitHub/GitLab&quot;:</p>
+
+<table><thead>
+<tr>
+<th>Git</th>
+<th>GitHub/GitLab</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>The software that we can use to manage file versions.</td>
+<td>The platform in which we can store files using Git software in the cloud.</td>
+</tr>
+</tbody></table>
+<h3 id='installation-2'>Installation</h3>
+<blockquote>
+<p>To check whether Git is installed or not, execute the following command:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>git <span class="nt">--version</span>
+</code></pre></div>
+<p>Linux users should have Git bundled with their operating system. On the other hand, Windows and macOS users should download it from Git&#39;s website (https://git-scm.com/downloads). Install Git as you would with other applications, but Windows users should pay attention to this menu:</p>
+
+<p><img src="https://www.woodwardweb.com/Windows-Live-Writer/Setting-up-the-perfect-Git-environment-o_906F/image_4.png" alt="" /></p>
+
+<p>In order to use Git using your standard Command Prompt, choose the &quot;Run Git from the Windows Command Prompt&quot; (photo by Martin Woodward).</p>
+<h3 id='configuration'>Configuration</h3>
+<p>Before you can start using Git, you must let Git know who you are. To do this, open your Terminal / Command Prompt / similar applications, then use the git config command.</p>
+
+<blockquote>
+<p>To fill in user details, execute the following commands:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>git config <span class="nt">--global</span> user.name <span class="s2">"&lt;Your Name Here&gt;"</span> <span class="o">&amp;&amp;</span> git config <span class="nt">--global</span> user.email <span class="s2">"&lt;Your Email Here&gt;"</span>
+</code></pre></div>
+<p>This configuration will reflect throughout your system. Later on, you can override this configuration for individual projects.</p>
+
+<p>Also, you may need to tweak the autocrlf feature in Git to avoid collaboration difficulties later on:</p>
+
+<blockquote>
+<p>To modify the setting of autocrlf, execute the following command:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>git config <span class="nt">--global</span> core.autocrlf input
+</code></pre></div><h2 id='visual-studio-code'>Visual Studio Code</h2>
 <p>Content under development</p>
 <h1 id='your-first-java-program'>Your First Java Program</h1><h1 id='git-workflow'>Git Workflow</h1><h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1>
       </div>
