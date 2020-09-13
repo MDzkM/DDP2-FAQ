@@ -41,14 +41,14 @@ To get the latest version of JDK, go to Oracle's site (https://www.oracle.com/ja
 
 
 - Add your Java installation to the Path entry by clicking "New", then typing Java's default installation folder, and clicking "OK".
-  
-	> The JDK 14 directory for Windows is (change 14.0.2 to your JDK version if you install a different one):
 
-   ~~~powershell
-   "C:\Program Files\Java\jdk-14.0.2\bin"
-   ~~~
+  > The JDK 14 directory for Windows is (change 14.0.2 to your JDK version if you install a different one):
 
-	![image-20200913090129269](../images/java-win-04.jpg)
+  ~~~powershell
+  "C:\Program Files\Java\jdk-14.0.2\bin"
+  ~~~
+
+  ![image-20200913090129269](../images/java-win-04.jpg)
 
 - Verify that your Java installation is detected by launching a Command Prompt / PowerShell / similar applications.
 
@@ -76,41 +76,53 @@ Installation for macOS is usually straightforward. Just run the downloaded file 
 
 This installation uses the compressed archive method, which is adaptable to almost all Linux distributions. It is done almost fully in the command line and is tested to work with Bash and Zsh shells by the author of this site.
 
-First, navigate to the directory where you have downloaded JDK and extract the archive using the following command (substitute the file with your version if different).
+> Command to extract the archive:
 
 ~~~shell
 tar xzf jdk-14.0.2_linux-x64.bin.tar.gz
 ~~~
 
-There should be a new folder called "jdk-\<version\>". Now, move that folder to your home directory (you can use ~ as an alias for home directory).
+- First, navigate to the directory where you have downloaded JDK and extract the archive (substitute the file with your version if different).
+
+> Command to move the folder:
 
 ~~~shell
 mv jdk-14.0.2 ~
 ~~~
 
-Navigate to your home directory:
+- There should be a new folder called "jdk-\<version\>". Now, move that folder to your home directory (you can use ~ as an alias for home directory).
 
+> Navigate to home directory:
 ~~~shell
 cd ~
 ~~~
 
-Run the following command to add JDK to your Path variable (replace .bashrc with .zshrc if using Zsh)
+- Now, navigate to your home directory
+
+> Command to add JDK to Path:
 
 ~~~shell
 echo "export PATH=$(pwd)/jdk-14.0.2/bin:$PATH" >> .bashrc
 ~~~
 
-Restart your Terminal or run the following command for the changes to take effect (replace .bashrc with .zshrc if using Zsh)
+- Run the command in the sidebar to add JDK to your Path variable (replace .bashrc with .zshrc if using Zsh)
+
+> Command to reload shell:
 
 ~~~shell
 source .bashrc
 ~~~
 
-To check if JDK is working, run this command:
+- Restart your Terminal or run the reload command for the changes to take effect (replace .bashrc with .zshrc if using Zsh)
+
+> Check Java:
 
 ~~~shell
 java -version
 ~~~
+
+- To check if JDK is working, run the java command.
+
 
 ![](../images/java-linux-01.jpg)
 
