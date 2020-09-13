@@ -27,30 +27,30 @@ To get the latest version of JDK, go to Oracle's site (https://www.oracle.com/ja
 
 ### Installation for Windows
 
-1. Run the installer which you have downloaded previously (make sure you have administrator access or you are the only user). You don't have to change anything during installation.
+- Run the installer which you have downloaded previously (make sure you have administrator access or you are the only user). You don't have to change anything during installation.
 
-   ![image-20200913083855321](../images/java-win-01.png)
+   ![image-20200913083855321](../images/java-win-01.jpg)
 
-2. After a successful installation, search for "PATH". In Windows 7, 8, and 8.1, the search bar is inside the Start menu/screen. In Windows 10, it is in the taskbar. Choose the recommended result ("Edit the system environment variables").
+- After a successful installation, search for "PATH". In Windows 7, 8, and 8.1, the search bar is inside the Start menu/screen. In Windows 10, it is in the taskbar. Choose the recommended result ("Edit the system environment variables").
 
-   ![image-20200913084634050](../images/java-win-02.png)
+   ![image-20200913084634050](../images/java-win-02.jpg)
 
-3. Choose "Environment Variables" in the settings window. Then, select "Path" in System Variables. Click "Edit" to modify it.
+- Choose "Environment Variables" in the settings window. Then, select "Path" in System Variables. Click "Edit" to modify it.
 
-   ![image-20200913084956739](../images/java-win-03.png)
+   ![image-20200913084956739](../images/java-win-03.jpg)
 
 
-4. Add your Java installation to the Path entry by clicking "New", then typing Java's default installation folder, and clicking "OK".
-   
-> The JDK 14 directory for Windows is (change 14.0.2 to your JDK version if you install a different one):
+- Add your Java installation to the Path entry by clicking "New", then typing Java's default installation folder, and clicking "OK".
+  
+	> The JDK 14 directory for Windows is (change 14.0.2 to your JDK version if you install a different one):
 
    ~~~powershell
    "C:\Program Files\Java\jdk-14.0.2\bin"
    ~~~
 
-![image-20200913090129269](../images/java-win-04.png)
+	![image-20200913090129269](../images/java-win-04.jpg)
 
-5. Verify that your Java installation is detected by launching a Command Prompt / PowerShell / similar applications.
+- Verify that your Java installation is detected by launching a Command Prompt / PowerShell / similar applications.
 
    > You can use this command to check your JDK version.
 
@@ -58,13 +58,17 @@ To get the latest version of JDK, go to Oracle's site (https://www.oracle.com/ja
    java -version
    ~~~
 
-   ![image-20200913090340871](../images/java-win-05.png)
+   ![image-20200913090340871](../images/java-win-05.jpg)
 
 
 
 ### Installation for macOS
 
-Installation for macOS is usually straightforward. Just run the downloaded file (be sure to give the installer necessary privileges) and the installation should run without any modified settings.
+Installation for macOS is usually straightforward. Just run the downloaded file (be sure to give the installer necessary privileges) and the installation should run without any modified settings. To check if the JDK is installed, run <code>java -version</code> in your Terminal.
+
+![Screen Shot 2020-09-13 at 10.07.29](../images/java-mac-01.jpg)
+
+![Screen Shot 2020-09-13 at 10.08.24](../images/java-mac-02.jpg)
 
 
 
@@ -72,43 +76,43 @@ Installation for macOS is usually straightforward. Just run the downloaded file 
 
 This installation uses the compressed archive method, which is adaptable to almost all Linux distributions. It is done almost fully in the command line and is tested to work with Bash and Zsh shells by the author of this site.
 
-> First, navigate to the directory where you have downloaded JDK and extract the archive using the following command (substitute the file with your version if different):
+First, navigate to the directory where you have downloaded JDK and extract the archive using the following command (substitute the file with your version if different).
 
 ~~~shell
 tar xzf jdk-14.0.2_linux-x64.bin.tar.gz
 ~~~
 
-> There should be a new folder called "jdk-\<version\>". Now, move that folder to your home directory (you can use ~ as an alias):
+There should be a new folder called "jdk-\<version\>". Now, move that folder to your home directory (you can use ~ as an alias for home directory).
 
 ~~~shell
 mv jdk-14.0.2 ~
 ~~~
 
-> Navigate to your home directory:
+Navigate to your home directory:
 
 ~~~shell
 cd ~
 ~~~
 
-> Run the following command to add JDK to your Path variable (replace .bashrc with .zshrc if using Zsh):
+Run the following command to add JDK to your Path variable (replace .bashrc with .zshrc if using Zsh)
 
 ~~~shell
 echo "export PATH=$(pwd)/jdk-14.0.2/bin:$PATH" >> .bashrc
 ~~~
 
-> Restart your Terminal or run the following command for the changes to take effect (replace .bashrc with .zshrc if using Zsh):
+Restart your Terminal or run the following command for the changes to take effect (replace .bashrc with .zshrc if using Zsh)
 
 ~~~shell
 source .bashrc
 ~~~
 
-> To check if JDK is working, run this command:
+To check if JDK is working, run this command:
 
 ~~~shell
 java -version
 ~~~
 
-![](../images/java-linux-01.png)
+![](../images/java-linux-01.jpg)
 
 
 
