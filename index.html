@@ -310,22 +310,19 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
+            <a href="#license-and-attribution" class="toc-h1 toc-link" data-title="License and Attribution">License and Attribution</a>
+          </li>
+          <li>
             <a href="#sample-program" class="toc-h1 toc-link" data-title="Sample Program">Sample Program</a>
           </li>
           <li>
             <a href="#compiling-and-running-program" class="toc-h1 toc-link" data-title="Compiling and Running Program">Compiling and Running Program</a>
           </li>
           <li>
-            <a href="#types-of-blocks" class="toc-h1 toc-link" data-title="Types of Blocks">Types of Blocks</a>
-          </li>
-          <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
-          </li>
-          <li>
             <a href="#recipes" class="toc-h1 toc-link" data-title="Recipes">Recipes</a>
           </li>
           <li>
-            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started">Getting Started</a>
+            <a href="#installation" class="toc-h1 toc-link" data-title="Installation">Installation</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#java" class="toc-h2 toc-link" data-title="Java">Java</a>
@@ -338,6 +335,15 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#your-first-java-program" class="toc-h1 toc-link" data-title="Your First Java Program">Your First Java Program</a>
+          </li>
+          <li>
+            <a href="#git-workflow" class="toc-h1 toc-link" data-title="Git Workflow">Git Workflow</a>
+          </li>
+          <li>
+            <a href="#best-practices-amp-common-pitfalls" class="toc-h1 toc-link" data-title="Best Practices &amp; Common Pitfalls">Best Practices &amp; Common Pitfalls</a>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://scele.cs.ui.ac.id/course/view.php?id=3019'>DDP2 Course Page</a></li>
@@ -349,7 +355,21 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the DDP 2 FAQ website! Here you can find information about how tos and common pitfalls that you might encounter down the line. The only language provided as an example here is Java which corresponds to the primary language used in the course.</p>
+<p>Welcome to the Programming Foundations 2 FAQ website. This site serves to give you an insight on how to start programming with Java and lay down best practices, common pitfalls, and frequently asked questions later down the line. This site&#39;s main purpose is to be a companion site for the <strong>Programming Foundations 2 (CSGE601021)</strong> course in Fasilkom UI.</p>
+<h1 id='license-and-attribution'>License and Attribution</h1>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
+
+<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+<p>This website and the corresponding GitHub repository are maintained by:</p>
+
+<ol>
+<li>Muhammad Azis Husein</li>
+<li>Muhammad Dzikra Muzaki</li>
+<li>Rafi Muhammad Daffa</li>
+</ol>
+
+<p>Any suggestion or feedbacks can be conveyed through the repository&#39;s Issues feature.</p>
 <h1 id='sample-program'>Sample Program</h1>
 <p>Now we are going to create the obligatory <code>Hello World</code> code like we do everytime we learn a new language.</p>
 
@@ -368,81 +388,13 @@
 <p>You can run it by compiling it first</p>
 </blockquote>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>javac HelloWorld.java <span class="o">&amp;&amp;</span> java HelloWorld
-</code></pre></div><h1 id='types-of-blocks'>Types of Blocks</h1>
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
-</tr>
-</tbody></table>
-<h1 id='recipes'>Recipes</h1><h1 id='getting-started'>Getting Started</h1><h2 id='java'>Java</h2>
+</code></pre></div><h1 id='recipes'>Recipes</h1><h1 id='installation'>Installation</h1><h2 id='java'>Java</h2>
 <p>Content under development</p>
 <h2 id='git'>Git</h2>
 <p>Content under development</p>
 <h2 id='visual-studio-code'>Visual Studio Code</h2>
 <p>Content under development</p>
-
+<h1 id='your-first-java-program'>Your First Java Program</h1><h1 id='git-workflow'>Git Workflow</h1><h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
