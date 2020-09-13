@@ -19,7 +19,7 @@ In this course, you will need to install some applications. There also some addi
 
 A Java Development Kit (JDK) installation comes with essential things to develop a Java program. Do note that JDK does not come with an editor like Python with its' IDLE. You will need to write your program in a separate editor.
 
-To get the latest version of JDK, go to Oracle's site (https://www.oracle.com/java/technologies/javase-downloads.html), pick your desired JDK version (latest is better), then choose the correct file for each OS, which is:
+To get the latest version of JDK, go to Oracle's site ([https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)), pick your desired JDK version (latest is better), then choose the correct file for each OS, which is:
 
 - Windows x64 Installer for Windows users
 - macOS Installer for macOS users
@@ -93,6 +93,7 @@ mv jdk-14.0.2 $HOME
 - There should be a new folder called "jdk-\<version\>". Now, move that folder to your home directory (you can use $HOME or ~ as an alias for home directory).
 
 > Navigate to home directory:
+
 ~~~shell
 cd $HOME
 ~~~
@@ -161,7 +162,8 @@ Before you can start using Git, you must let Git know who you are. To do this, o
 > To fill in user details, execute the following commands:
 
 ~~~shell
-git config --global user.name "<Your Name Here>" && git config --global user.email "<Your Email Here>"
+git config --global user.name "<Your Name Here>"
+git config --global user.email "<Your Email Here>"
 ~~~
 
 This configuration will reflect throughout your system. Later on, you can override this configuration for individual projects.
@@ -178,4 +180,28 @@ git config --global core.autocrlf input
 
 ## Visual Studio Code
 
-Content under development
+Visual Studio Code is a text editor from Microsoft which you can use to write Java programs. It can be extended with some addons to make it a quite powerful development tool.
+
+To install Visual Studio Code on Windows or macOS, download the appropriate installer from the official website ([https://code.visualstudio.com/](https://code.visualstudio.com/)). Install it as you would for other applications.
+
+Linux users are recommended to check with their OS's application manager. For example, Snap Store already has distributions for Visual Studio Code and it is easier to install from there. If such distributions do not exist, you can download it from the official website.
+
+### Java Extension Pack
+
+To aid in Java program development, Microsoft provides a Java Extension Pack which consists of 6 (six) extensions for things such as autocompletion, debugger, syntax checker, etc. More information about this extension can be found in [https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
+
+To install this extension from within Visual Studio Code, click the Extension icon (marked in the picture), then type "Java Extension Pack" in the search bar. Select the version published by Microsoft then click Install.
+
+![image-20200913113305929](../images/vsc-01.jpg)
+
+
+
+### Live Share Extension Pack
+
+Desperate times call for desperate measure, they said. Since we are now facing a work-from-home scenario, it can be difficult to share code in real-time to be discussed. To support this, Visual Studio Code has an extension called "Live Share Extension Pack" to share your Visual Studio Code contents to others in real-time.
+
+To install this extension, follow the same steps as in installing Java Extension Pack.
+
+![image-20200913114048002](../images/vsc-02.jpg)
+
+For more information on how to use the extension, please refer to [this module](https://docs.google.com/document/d/1wvDzgmEHUUSbzTqz3hsEapj7UZVjUi6TxArhn5K-Dus/edit?usp=sharing).
