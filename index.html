@@ -313,12 +313,6 @@
             <a href="#license-and-attribution" class="toc-h1 toc-link" data-title="License and Attribution">License and Attribution</a>
           </li>
           <li>
-            <a href="#sample-program" class="toc-h1 toc-link" data-title="Sample Program">Sample Program</a>
-          </li>
-          <li>
-            <a href="#compiling-and-running-program" class="toc-h1 toc-link" data-title="Compiling and Running Program">Compiling and Running Program</a>
-          </li>
-          <li>
             <a href="#installation" class="toc-h1 toc-link" data-title="Installation">Installation</a>
               <ul class="toc-list-h2">
                   <li>
@@ -337,6 +331,11 @@
           </li>
           <li>
             <a href="#your-first-java-program" class="toc-h1 toc-link" data-title="Your First Java Program">Your First Java Program</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#compiling-and-running-program" class="toc-h2 toc-link" data-title="Compiling and Running Program">Compiling and Running Program</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#git-workflow" class="toc-h1 toc-link" data-title="Git Workflow">Git Workflow</a>
@@ -370,25 +369,7 @@
 </ol>
 
 <p>Any suggestion or feedbacks can be conveyed through the repository&#39;s Issues feature.</p>
-<h1 id='sample-program'>Sample Program</h1>
-<p>Now we are going to create the obligatory <code>Hello World</code> code like we do everytime we learn a new language.</p>
-
-<blockquote>
-<p>Create this sample program in a file named HelloWorld.java</p>
-</blockquote>
-<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World!"</span><span class="o">);</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div><h1 id='compiling-and-running-program'>Compiling and Running Program</h1>
-<p>Now that you&#39;ve created the template, you can see what output it produces.</p>
-
-<blockquote>
-<p>You can run it by compiling it first</p>
-</blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>javac HelloWorld.java <span class="o">&amp;&amp;</span> java HelloWorld
-</code></pre></div><h1 id='installation'>Installation</h1><h2 id='recipes'>Recipes</h2>
+<h1 id='installation'>Installation</h1><h2 id='recipes'>Recipes</h2>
 <p>In this course, you will need to install some applications. There also some additional tools which could come in handy later on. To minimize conflicts, here are the versions of the tools which we will use in this course:</p>
 
 <table><thead>
@@ -605,7 +586,30 @@ git config <span class="nt">--global</span> user.email <span class="s2">"&lt;You
 <p><img src="images/vsc-02-b3798004.jpg" alt="image-20200913114048002" /></p>
 
 <p>For more information on how to use the extension, please refer to <a href="https://docs.google.com/document/d/1wvDzgmEHUUSbzTqz3hsEapj7UZVjUi6TxArhn5K-Dus/edit?usp=sharing">this module</a>.</p>
-<h1 id='your-first-java-program'>Your First Java Program</h1><h1 id='git-workflow'>Git Workflow</h1><h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1>
+<h1 id='your-first-java-program'>Your First Java Program</h1>
+<p>Now we are going to create the obligatory <code>Hello World</code> code like we do every time we learn a new language.</p>
+
+<blockquote>
+<p>Create this sample program in a file named HelloWorld.java</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World!"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>If you want to know, this is the roughly equivalent code in Python</p>
+</blockquote>
+<div class="highlight"><pre class="highlight python tab-python"><code><span class="k">print</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+</code></pre></div><h2 id='compiling-and-running-program'>Compiling and Running Program</h2>
+<p>Now that you&#39;ve created the template, you can see what output it produces.</p>
+
+<blockquote>
+<p>You can run it by compiling it first</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>javac HelloWorld.java <span class="o">&amp;&amp;</span> java HelloWorld
+</code></pre></div><h1 id='git-workflow'>Git Workflow</h1><h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
