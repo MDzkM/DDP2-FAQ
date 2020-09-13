@@ -11,7 +11,6 @@ toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - 01recipes
   - 02start
   - 03firstprogram
   - 04gitflow
