@@ -444,27 +444,30 @@
 <li>Run the installer which you have downloaded previously (make sure you have administrator access or you are the only user). You don&#39;t have to change anything during installation.</li>
 </ol>
 
-<p><img src="images/images/java-win-01.png" alt="image-20200913083855321" /></p>
+<p><img src="images/java-win-01-297d9722.png" alt="image-20200913083855321" /></p>
 
 <ol>
 <li>After a successful installation, search for &quot;PATH&quot;. In Windows 7, 8, and 8.1, the search bar is inside the Start menu/screen. In Windows 10, it is in the taskbar. Choose the recommended result (&quot;Edit the system environment variables&quot;).</li>
 </ol>
 
-<p><img src="images/images/java-win-02.png" alt="image-20200913084634050" /></p>
+<p><img src="images/java-win-02-a031056c.png" alt="image-20200913084634050" /></p>
 
 <ol>
 <li>Choose &quot;Environment Variables&quot; in the settings window. Then, select &quot;Path&quot; in System Variables. Click &quot;Edit&quot; to modify it.</li>
 </ol>
 
-<p><img src="images/images/java-win-03.png" alt="image-20200913084956739" /></p>
+<p><img src="images/java-win-03-e52089b6.png" alt="image-20200913084956739" /></p>
 
 <ol>
-<li>Add your Java installation to the Path entry by clicking &quot;New&quot;, then typing Java&#39;s default installation folder, and clicking &quot;OK&quot;.
-&gt; The JDK 14 directory for Windows is (change 14.0.1 to your JDK version if you install a different one):</li>
+<li>Add your Java installation to the Path entry by clicking &quot;New&quot;, then typing Java&#39;s default installation folder, and clicking &quot;OK&quot;.</li>
 </ol>
-<div class="highlight"><pre class="highlight powershell tab-powershell"><code><span class="w">   </span><span class="s2">"C:\Program Files\Java\jdk-14.0.1\bin"</span><span class="w">
+
+<blockquote>
+<p>The JDK 14 directory for Windows is (change 14.0.2 to your JDK version if you install a different one):</p>
+</blockquote>
+<div class="highlight"><pre class="highlight powershell tab-powershell"><code><span class="w">   </span><span class="s2">"C:\Program Files\Java\jdk-14.0.2\bin"</span><span class="w">
 </span></code></pre></div>
-<p><img src="images/images/java-win-04.png" alt="image-20200913090129269" /></p>
+<p><img src="images/java-win-04-785c5190.png" alt="image-20200913090129269" /></p>
 
 <ol>
 <li>Verify that your Java installation is detected by launching a Command Prompt / PowerShell / similar applications.</li>
@@ -475,7 +478,43 @@
 </blockquote>
 <div class="highlight"><pre class="highlight powershell tab-powershell"><code><span class="w">   </span><span class="nf">java</span><span class="w"> </span><span class="nt">-version</span><span class="w">
 </span></code></pre></div>
-<p><img src="images/images/java-win-05.png" alt="image-20200913090340871" /></p>
+<p><img src="images/java-win-05-16ea5d88.png" alt="image-20200913090340871" /></p>
+<h3 id='installation-for-macos'>Installation for macOS</h3>
+<p>Installation for macOS is usually straightforward. Just run the downloaded file (be sure to give the installer necessary privileges) and the installation should run without any modified settings.</p>
+<h3 id='installation-on-linux-tar-gz'>Installation on Linux (.tar.gz)</h3>
+<p>This installation uses the compressed archive method, which is adaptable to almost all Linux distributions. It is done almost fully in the command line and is tested to work with Bash and Zsh shells by the author of this site.</p>
+
+<blockquote>
+<p>First, navigate to the directory where you have downloaded JDK and extract the archive using the following command (substitute the file with your version if different):</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">tar </span>xzf jdk-14.0.2_linux-x64.bin.tar.gz
+</code></pre></div>
+<blockquote>
+<p>There should be a new folder called &quot;jdk-&lt;version&gt;&quot;. Now, move that folder to your home directory (you can use ~ as an alias):</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">mv </span>jdk-14.0.2 ~
+</code></pre></div>
+<blockquote>
+<p>Navigate to your home directory:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">cd</span> ~
+</code></pre></div>
+<blockquote>
+<p>Run the following command to add JDK to your Path variable (replace .bashrc with .zshrc if using Zsh):</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">echo</span> <span class="s2">"export PATH=</span><span class="si">$(</span><span class="nb">pwd</span><span class="si">)</span><span class="s2">/jdk-14.0.2/bin:</span><span class="nv">$PATH</span><span class="s2">"</span> <span class="o">&gt;&gt;</span> .bashrc
+</code></pre></div>
+<blockquote>
+<p>Restart your Terminal or run the following command for the changes to take effect (replace .bashrc with .zshrc if using Zsh):</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">source</span> .bashrc
+</code></pre></div>
+<blockquote>
+<p>To check if JDK is working, run this command:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>java <span class="nt">-version</span>
+</code></pre></div>
+<p><img src="images/java-linux-01-77c58577.png" alt="" /></p>
 <h2 id='git'>Git</h2>
 <p>Content under development</p>
 <h2 id='visual-studio-code'>Visual Studio Code</h2>
