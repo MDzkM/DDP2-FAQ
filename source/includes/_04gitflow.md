@@ -69,3 +69,12 @@ If you have done, you could see your files are already available on github repos
 
 ## How to Pull Updates on Github to Local Repository
 
+In case you are work with your friends using git, sometimes you need to updates your local repository according to github repository. You could updates your local repository by pulling the changes on your github repository.
+
+> To pull changes from github
+
+~~~shell
+git pull
+~~~
+
+Then, your local repository will be updated according to github repository.
