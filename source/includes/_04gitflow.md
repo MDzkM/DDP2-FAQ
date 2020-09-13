@@ -52,7 +52,8 @@ echo "# test" >> README.md
 ~~~
 
 You also can create some another files such as Java or Python. If you have done editing this local repository and wanna push it to your github repository, there are some steps to do it:
-- Add your local changes (you can add all using '.' or you can add just one file by type its file name)
+
+- Add your local changes (you can add all changes using '.' or you can add just one file by type its file name)
 - Give commit message
 - Push it to github
 
@@ -64,4 +65,7 @@ git commit -m "first commit"
 git push origin master
 ~~~
 
-If you have done, you could see your file already available on github repository.
+If you have done, you could see your files are already available on github repository.
+
+## How to Pull Updates on Github to Local Repository
+
