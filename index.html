@@ -432,7 +432,7 @@
 <h2 id='java'>Java</h2>
 <p>A Java Development Kit (JDK) installation comes with essential things to develop a Java program. Do note that JDK does not come with an editor like Python with its&#39; IDLE. You will need to write your program in a separate editor.</p>
 
-<p>To get the latest version of JDK, go to Oracle&#39;s site (https://www.oracle.com/java/technologies/javase-downloads.html), pick your desired JDK version (latest is better), then choose the correct file for each OS, which is:</p>
+<p>To get the latest version of JDK, go to Oracle&#39;s site (<a href="https://www.oracle.com/java/technologies/javase-downloads.html">https://www.oracle.com/java/technologies/javase-downloads.html</a>), pick your desired JDK version (latest is better), then choose the correct file for each OS, which is:</p>
 
 <ul>
 <li>Windows x64 Installer for Windows users</li>
@@ -507,12 +507,10 @@
 </ul>
 
 <blockquote>
-<p>Navigate to home directory:
-~~~shell
-cd $HOME
-~~~</p>
+<p>Navigate to home directory:</p>
 </blockquote>
-
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">cd</span> <span class="nv">$HOME</span>
+</code></pre></div>
 <ul>
 <li>Now, navigate to your home directory</li>
 </ul>
@@ -576,7 +574,8 @@ cd $HOME
 <blockquote>
 <p>To fill in user details, execute the following commands:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>git config <span class="nt">--global</span> user.name <span class="s2">"&lt;Your Name Here&gt;"</span> <span class="o">&amp;&amp;</span> git config <span class="nt">--global</span> user.email <span class="s2">"&lt;Your Email Here&gt;"</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>git config <span class="nt">--global</span> user.name <span class="s2">"&lt;Your Name Here&gt;"</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"&lt;Your Email Here&gt;"</span>
 </code></pre></div>
 <p>This configuration will reflect throughout your system. Later on, you can override this configuration for individual projects.</p>
 
@@ -587,7 +586,25 @@ cd $HOME
 </blockquote>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>git config <span class="nt">--global</span> core.autocrlf input
 </code></pre></div><h2 id='visual-studio-code'>Visual Studio Code</h2>
-<p>Content under development</p>
+<p>Visual Studio Code is a text editor from Microsoft which you can use to write Java programs. It can be extended with some addons to make it a quite powerful development tool.</p>
+
+<p>To install Visual Studio Code on Windows or macOS, download the appropriate installer from the official website (<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>). Install it as you would for other applications.</p>
+
+<p>Linux users are recommended to check with their OS&#39;s application manager. For example, Snap Store already has distributions for Visual Studio Code and it is easier to install from there. If such distributions do not exist, you can download it from the official website.</p>
+<h3 id='java-extension-pack'>Java Extension Pack</h3>
+<p>To aid in Java program development, Microsoft provides a Java Extension Pack which consists of 6 (six) extensions for things such as autocompletion, debugger, syntax checker, etc. More information about this extension can be found in <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack">https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack</a>.</p>
+
+<p>To install this extension from within Visual Studio Code, click the Extension icon (marked in the picture), then type &quot;Java Extension Pack&quot; in the search bar. Select the version published by Microsoft then click Install.</p>
+
+<p><img src="images/vsc-01-4ca7e628.jpg" alt="image-20200913113305929" /></p>
+<h3 id='live-share-extension-pack'>Live Share Extension Pack</h3>
+<p>Desperate times call for desperate measure, they said. Since we are now facing a work-from-home scenario, it can be difficult to share code in real-time to be discussed. To support this, Visual Studio Code has an extension called &quot;Live Share Extension Pack&quot; to share your Visual Studio Code contents to others in real-time.</p>
+
+<p>To install this extension, follow the same steps as in installing Java Extension Pack.</p>
+
+<p><img src="images/vsc-02-b3798004.jpg" alt="image-20200913114048002" /></p>
+
+<p>For more information on how to use the extension, please refer to <a href="https://docs.google.com/document/d/1wvDzgmEHUUSbzTqz3hsEapj7UZVjUi6TxArhn5K-Dus/edit?usp=sharing">this module</a>.</p>
 <h1 id='your-first-java-program'>Your First Java Program</h1><h1 id='git-workflow'>Git Workflow</h1><h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1>
       </div>
       <div class="dark-box">
