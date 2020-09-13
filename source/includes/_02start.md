@@ -87,14 +87,14 @@ tar xzf jdk-14.0.2_linux-x64.bin.tar.gz
 > Command to move the folder:
 
 ~~~shell
-mv jdk-14.0.2 ~
+mv jdk-14.0.2 $HOME
 ~~~
 
-- There should be a new folder called "jdk-\<version\>". Now, move that folder to your home directory (you can use ~ as an alias for home directory).
+- There should be a new folder called "jdk-\<version\>". Now, move that folder to your home directory (you can use $HOME or ~ as an alias for home directory).
 
 > Navigate to home directory:
 ~~~shell
-cd ~
+cd $HOME
 ~~~
 
 - Now, navigate to your home directory
@@ -130,7 +130,51 @@ java -version
 
 ## Git
 
-Content under development
+Git is a version control system (VCS) designed to help you maintain file versions for projects small and large. In this course, you will get and submit assignment through this application. First of all, we should know the difference between "Git" and "GitHub/GitLab":
+
+| Git                                                   | GitHub/GitLab                                                |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| The software that we can use to manage file versions. | The platform in which we can store files using Git software in the cloud. |
+
+
+
+### Installation
+
+> To check whether Git is installed or not, execute the following command:
+
+~~~shell
+git --version
+~~~
+
+Linux users should have Git bundled with their operating system. On the other hand, Windows and macOS users should download it from Git's website (https://git-scm.com/downloads). Install Git as you would with other applications, but Windows users should pay attention to this menu:
+
+![](https://www.woodwardweb.com/Windows-Live-Writer/Setting-up-the-perfect-Git-environment-o_906F/image_4.png)
+
+In order to use Git using your standard Command Prompt, choose the "Run Git from the Windows Command Prompt" (photo by Martin Woodward).
+
+
+
+### Configuration
+
+Before you can start using Git, you must let Git know who you are. To do this, open your Terminal / Command Prompt / similar applications, then use the git config command.
+
+> To fill in user details, execute the following commands:
+
+~~~shell
+git config --global user.name "<Your Name Here>" && git config --global user.email "<Your Email Here>"
+~~~
+
+This configuration will reflect throughout your system. Later on, you can override this configuration for individual projects.
+
+Also, you may need to tweak the autocrlf feature in Git to avoid collaboration difficulties later on:
+
+> To modify the setting of autocrlf, execute the following command:
+
+~~~shell
+git config --global core.autocrlf input
+~~~
+
+
 
 ## Visual Studio Code
 
