@@ -12,13 +12,11 @@ class HelloWorld {
 }
 ```
 
-> If you want to know, this is the roughly equivalent code in Python
-
 ~~~python
 print("Hello World!")
 ~~~
 
-
+Note: You can select Python in the top part of the screen to see the rough equivalence of the code in Python.
 
 ## Compiling and Running Program
 
