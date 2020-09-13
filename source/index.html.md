@@ -11,9 +11,11 @@ toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - errors
-  - recipes
-  - start
+  - 01recipes
+  - 02start
+  - 03firstprogram
+  - 04gitflow
+  - 05bestpractices
 
 search: true
 
@@ -22,7 +24,25 @@ code_clipboard: true
 
 # Introduction
 
-Welcome to the DDP 2 FAQ website! Here you can find information about how tos and common pitfalls that you might encounter down the line. The only language provided as an example here is Java which corresponds to the primary language used in the course.
+Welcome to the Programming Foundations 2 FAQ website. This site serves to give you an insight on how to start programming with Java and lay down best practices, common pitfalls, and frequently asked questions later down the line. This site's main purpose is to be a companion site for the **Programming Foundations 2 (CSGE601021)** course in Fasilkom UI.
+
+
+
+# License and Attribution
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+This website and the corresponding GitHub repository are maintained by:
+
+1. Muhammad Azis Husein
+2. Muhammad Dzikra Muzaki
+3. Rafi Muhammad Daffa
+
+Any suggestion or feedbacks can be conveyed through the repository's Issues feature.
+
+
 
 # Sample Program
 
@@ -47,15 +67,3 @@ Now that you've created the template, you can see what output it produces.
 ```shell
 javac HelloWorld.java && java HelloWorld
 ```
-
-# Types of Blocks
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
