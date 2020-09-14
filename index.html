@@ -356,6 +356,23 @@
           </li>
           <li>
             <a href="#best-practices-amp-common-pitfalls" class="toc-h1 toc-link" data-title="Best Practices &amp; Common Pitfalls">Best Practices &amp; Common Pitfalls</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#remember-to-use-semicolon" class="toc-h2 toc-link" data-title="Remember to use semicolon (;)">Remember to use semicolon (;)</a>
+                  </li>
+                  <li>
+                    <a href="#use-file-name-for-public-class-name" class="toc-h2 toc-link" data-title="Use File Name for Public Class Name">Use File Name for Public Class Name</a>
+                  </li>
+                  <li>
+                    <a href="#use-lower-case-for-39-main-39-method" class="toc-h2 toc-link" data-title="Use Lower Case for 'main' Method">Use Lower Case for 'main' Method</a>
+                  </li>
+                  <li>
+                    <a href="#there-is-only-one-main-method" class="toc-h2 toc-link" data-title="There is Only One Main Method">There is Only One Main Method</a>
+                  </li>
+                  <li>
+                    <a href="#remember-to-declare-variable-type" class="toc-h2 toc-link" data-title="Remember to Declare Variable Type">Remember to Declare Variable Type</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -689,7 +706,127 @@ git push origin master
 <div class="highlight"><pre class="highlight shell tab-shell"><code>git pull
 </code></pre></div>
 <p>Then, your local repository will be updated according to github repository.</p>
-<h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1>
+<h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1><h2 id='remember-to-use-semicolon'>Remember to use semicolon (;)</h2>
+<p>Different with Python, in Java you must put semicolon after you declare something. Your code will be eror if you leave something without put semicolon.</p>
+
+<blockquote>
+<p>Example without semicolon</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Semicolon</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"What's wrong??"</span><span class="o">)</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Ohh there are no semicolon at there"</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>Example with semicolon</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Semicolon</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Like this??"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Ohh yes this code already completed with semicolon"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id='use-file-name-for-public-class-name'>Use File Name for Public Class Name</h2>
+<p>Your public class name must be the same with your file name or your code will get error while you compile it.</p>
+
+<blockquote>
+<p>Wrong public class name for Java file named &#39;Fasilkom&#39;</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Pacil</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"My class name is wrong"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>correct public class name for Java file named &#39;Fasilkom&#39;</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Fasilkom</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Ahh this class name sounds right"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id='use-lower-case-for-39-main-39-method'>Use Lower Case for &#39;main&#39; Method</h2>
+<p>Your program on Java must have a main method. Remember that you must type it in lower case only. The compiler couldn&#39;t find your main method if you use uppercase. (It&#39;s case sensitive)</p>
+
+<blockquote>
+<p>Upper case &#39;Main&#39;</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Upper</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">Main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Wow, my main method looks wrong"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Let we try to compile!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>Lower case &#39;main&#39;</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lower</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Hmm, maybe may main method must like this"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Let's try it!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id='there-is-only-one-main-method'>There is Only One Main Method</h2>
+<p>You could only have one main method for your Java program. Your compiler will be confused if you have more than one. Be loyal with your one.</p>
+
+<blockquote>
+<p>More than one main method</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Two</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"You're my first!!"</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"And you're my first too in alternate world"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>Only one main method</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">One</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"You're my one and only!!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h2 id='remember-to-declare-variable-type'>Remember to Declare Variable Type</h2>
+<p>Again, different with Python, in Java you couldn&#39;t create a variable without declare what is your variable type.</p>
+
+<blockquote>
+<p>No variable type</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">NoType</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">naruto</span> <span class="o">=</span> <span class="s">"RASENGANN!!!"</span><span class="o">;</span>
+        <span class="n">maung</span> <span class="o">=</span> <span class="mi">2019</span><span class="o">;</span>
+        <span class="n">revolution</span> <span class="o">=</span> <span class="mf">4.0</span><span class="o">;</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"When the enemies almost kill you, just go ahead and said, "</span> <span class="o">+</span> <span class="n">naruto</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Maung is the name of Fasilkom year of "</span> <span class="o">+</span> <span class="n">maung</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Right now we go through industry revolution "</span> <span class="o">+</span> <span class="n">revolution</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<blockquote>
+<p>Using variable type</p>
+</blockquote>
+<div class="highlight"><pre class="highlight java tab-java"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">NoType</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">String</span> <span class="n">naruto</span> <span class="o">=</span> <span class="s">"RASENGANN!!!"</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">maung</span> <span class="o">=</span> <span class="mi">2019</span><span class="o">;</span>
+        <span class="kt">double</span> <span class="n">revolution</span> <span class="o">=</span> <span class="mf">4.0</span><span class="o">;</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"When the enemies almost kill you, just go ahead and said, "</span> <span class="o">+</span> <span class="n">naruto</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Maung is the name of Fasilkom year of "</span> <span class="o">+</span> <span class="n">maung</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Right now we go through industry revolution "</span> <span class="o">+</span> <span class="n">revolution</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
