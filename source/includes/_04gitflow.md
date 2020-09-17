@@ -136,3 +136,17 @@ git push origin master
 ~~~
 
 Now the master branch are updated with your new branch.
+
+## How to Add Remote Upstream
+
+In this course, you could add DDP 2 repository to be your upstream repository in order to pull every task updates. Before you can add remote upstream to DDP 2 repository, you have to create a blank repository first (without readme.md file). Then, clone that repository to your local computer. Now, you could add remote upstream to DDP 2 repositpry using CMD in your local repository directory.
+
+> Add remote upstream
+
+~~~shell
+git add remote add upstream [DDP 2 repository https link]
+git fetch upstream
+git merge upstream/master
+~~~
+
+Now, you are already set DDP 2 repository to be your upstream master.
