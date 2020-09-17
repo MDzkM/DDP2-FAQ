@@ -358,6 +358,9 @@
                   <li>
                     <a href="#how-to-merge-updates-on-your-new-branch-to-master" class="toc-h2 toc-link" data-title="How to Merge Updates on Your New Branch to Master">How to Merge Updates on Your New Branch to Master</a>
                   </li>
+                  <li>
+                    <a href="#how-to-add-remote-upstream" class="toc-h2 toc-link" data-title="How to Add Remote Upstream">How to Add Remote Upstream</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -764,6 +767,17 @@ git push origin myNewBranch
 git push origin master
 </code></pre></div>
 <p>Now the master branch are updated with your new branch.</p>
+<h2 id='how-to-add-remote-upstream'>How to Add Remote Upstream</h2>
+<p>In this course, you could add DDP 2 repository to be your upstream repository in order to pull every task updates. Before you can add remote upstream to DDP 2 repository, you have to create a blank repository first (without readme.md file). Then, clone that repository to your local computer. Now, you could add remote upstream to DDP 2 repositpry using CMD in your local repository directory.</p>
+
+<blockquote>
+<p>Add remote upstream</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>git add remote add upstream <span class="o">[</span>DDP 2 repository https <span class="nb">link</span><span class="o">]</span>
+git fetch upstream
+git merge upstream/master
+</code></pre></div>
+<p>Now, you are already set DDP 2 repository to be your upstream master.</p>
 <h1 id='best-practices-amp-common-pitfalls'>Best Practices &amp; Common Pitfalls</h1><h2 id='remember-to-use-semicolon'>Remember to use semicolon (;)</h2>
 <p>Different with Python, in Java you must put semicolon after you declare something. Your code will be eror if you leave something without put semicolon.</p>
 
