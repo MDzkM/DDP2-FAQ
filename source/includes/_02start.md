@@ -7,7 +7,7 @@ In this course, you will need to install some applications. There also some addi
 | Application                        | Status           | Recommended Version        |
 | ---------------------------------- | ---------------- | -------------------------- |
 | An operating system of your choice | Mandatory (duh?) | Please use 64-bit versions |
-| Java Development Kit (JDK)         | Mandatory (duh?) | Latest (\>= 10.0)          |
+| Java Development Kit (JDK)         | Mandatory (duh?) | 10.0 <= version <= 14.0.2  |
 | Git                                | Mandatory        | Latest (\>= 2.26)          |
 | Visual Studio Code                 | Recommended      | Latest                     |
 | VSCode Java Extension Pack         | Recommended      | Latest                     |
@@ -16,6 +16,8 @@ In this course, you will need to install some applications. There also some addi
 
 
 ## Java
+
+> **Info**: As of September 16th 2020, Visual Studio Code has yet to support JDK 15, the latest JDK edition. It is recommended to use JDK 14 instead while waiting for the support to mature.
 
 A Java Development Kit (JDK) installation comes with essential things to develop a Java program. Do note that JDK does not come with an editor like Python with its' IDLE. You will need to write your program in a separate editor.
 
