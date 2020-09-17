@@ -18,7 +18,7 @@ Fill in your repository name as free as you want (in case on this course, you ca
 
 ![screen shot 09-13-20](../images/gitlab-04.PNG)
 
-(Note: in this course, don't forget to makes your repository access to public. So your lecturer and asistant lecturer could look up to your repository)
+(Note: in this course, don't forget to makes your repository access to private)
 
 Last, just hit on 'create project' button and your repository will ready to use.
 
@@ -35,7 +35,7 @@ After command promt opened, you could clone using HTTPS by copying the link on t
 > To clone your repository from gitlab to local
 
 ~~~shell
-git clone https://github.com/azis14/test.git
+git clone https://gitlab.com/muhammadazishusein/test.git
 cd test
 ~~~
 
